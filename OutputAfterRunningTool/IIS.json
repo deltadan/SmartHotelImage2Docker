@@ -1,0 +1,123 @@
+{
+    "AspNet35Status":  "Present",
+    "ApplicationPools":  {
+                             "applicationPools":  [
+                                                      "DefaultAppPool",
+                                                      "Classic .NET AppPool",
+                                                      "ASP.NET v4.0",
+                                                      "ASP.NET v4.0 Classic",
+                                                      "SmartHotelWCF",
+                                                      "SmartHotelWeb"
+                                                  ],
+                             "applicationPoolDefaults":  {
+                                                             "managedRuntimeVersion":  null,
+                                                             "processModel":  {
+                                                                                  "identityType":  "ApplicationPoolIdentity"
+                                                                              }
+                                                         }
+                         },
+    "ApplicationDefaults":  [
+
+                            ],
+    "SiteDefaults":  [
+                         [
+
+                         ],
+                         [
+
+                         ]
+                     ],
+    "Websites":  [
+                     {
+                         "Name":  "Default Web Site",
+                         "ID":  "1",
+                         "Applications":  [
+                                              {
+                                                  "Path":  "/",
+                                                  "ApplicationPool":  null,
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "C:\\inetpub\\wwwroot"
+                                                                             }
+                                                                         ]
+                                              }
+                                          ],
+                         "Bindings":  [
+                                          {
+                                              "Protocol":  "http",
+                                              "BindingInformation":  "*:80:"
+                                          },
+                                          {
+                                              "Protocol":  "net.tcp",
+                                              "BindingInformation":  "808:*"
+                                          },
+                                          {
+                                              "Protocol":  "net.pipe",
+                                              "BindingInformation":  "*"
+                                          },
+                                          {
+                                              "Protocol":  "net.msmq",
+                                              "BindingInformation":  "localhost"
+                                          },
+                                          {
+                                              "Protocol":  "msmq.formatname",
+                                              "BindingInformation":  "localhost"
+                                          }
+                                      ]
+                     },
+                     {
+                         "Name":  "SmartHotelWCF",
+                         "ID":  "2",
+                         "Applications":  [
+                                              {
+                                                  "Path":  "/",
+                                                  "ApplicationPool":  "SmartHotelWCF",
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "C:\\inetpub\\SmartHotelWCF"
+                                                                             }
+                                                                         ]
+                                              }
+                                          ],
+                         "Bindings":  [
+                                          {
+                                              "Protocol":  "http",
+                                              "BindingInformation":  "*:8088:"
+                                          }
+                                      ]
+                     },
+                     {
+                         "Name":  "SmartHotelWeb",
+                         "ID":  "3",
+                         "Applications":  [
+                                              {
+                                                  "Path":  "/",
+                                                  "ApplicationPool":  "SmartHotelWeb",
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "C:\\inetpub\\SmartHotelWeb"
+                                                                             }
+                                                                         ]
+                                              }
+                                          ],
+                         "Bindings":  [
+                                          {
+                                              "Protocol":  "http",
+                                              "BindingInformation":  "*:80:"
+                                          }
+                                      ]
+                     }
+                 ],
+    "AspNetStatus":  "Present",
+    "FeatureName":  "",
+    "VirtualDirectoryDefaults":  [
+
+                                 ],
+    "Status":  "Present",
+    "HttpHandlers":  [
+
+                     ]
+}
